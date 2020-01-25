@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import BankContract from "./contracts/bank.json";
 import NFTContract from "./contracts/NFToken.json";
 import ERC721Contract from "./contracts/ERC721.json";
-import "bootstrap/dist/css/bootstrap.min.css";
 import getWeb3 from "./getWeb3";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
@@ -503,7 +502,7 @@ class App extends Component {
                 onChange={this.handleERC721ContractAddress}
                 value={this.state.ERC721ContractAddress}
               />
-              <Grid container justify="center" spacing={2}>
+              <Grid style={{width: '100%'}} container justify="center" spacing={2}>
                 <Grid item>
                   <Card {...NFTCardProps} />
                 </Grid>
